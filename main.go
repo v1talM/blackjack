@@ -67,7 +67,7 @@ func main() {
 		}
 		}
 	}
-	if dealer.Score() <= 16 || (dealer.Score() == 17 && dealer.MinScore() != 17) {
+	for dealer.Score() <= 16 || (dealer.Score() == 17 && dealer.MinScore() != 17) {
 		card, cards = draw(cards)
 		dealer = append(dealer, card)
 	}
